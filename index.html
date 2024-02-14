@@ -81,24 +81,24 @@
                 <div class="flex justify-between ">
                     <button class="btn bg-purple-500 rounded-full text-white">
                         
-                        Life
+                            Life
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
-                        <span>1</span>
+                        <span id="current-life">0</span>
                       </button>
-                      <button class="btn rounded-full bg-purple-700 text-white">
+                      <button id="total-score" class="btn rounded-full bg-purple-700 text-white">
                         Score
                         <i class="fa-solid fa-dollar-sign"></i>
-                        <span>1</span>
+                        <span id="score">0</span>
                       </button>
                 </div>
                 <!-- live screen -->
             </div>
         </section>
         <!-- final score -->
-        <section class="hidden score min-h-screen flex flex-col justify-center items-center ">
+        <section id="final-score" class="hidden score min-h-screen flex flex-col justify-center items-center ">
             <div class="text-white  bg-[#ffffff33] p-4 rounded text-center" >
-                <h1 class="text-6xl font-bold pb-4">Score: <span>14</span></h1>
-                <button class="btn  bg-[#ffff] btn-ghost text-black">Play Now</button>
+                <h1 class="text-6xl font-bold pb-4">Score: <span id="final-total-score">0</span></h1>
+                <button onclick="continueGame()" class="btn  bg-[#ffff] btn-ghost text-black">Play Now</button>
                 <p class="pt-4">Practice will make you Pro</p>
             </div>
         </section>

@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/c815c680d6.js" crossorigin="anonymous"></script>
     <style>
         .font{
             font-family: "Poppins", sans-serif;
@@ -32,7 +32,12 @@
         <section class="play-ground flex flex-col justify-center items-center">
             <div>
                 <!-- screen -->
-                <div class="border-[20px] mt-24 rounded-2xl border-[#010313CC] bg-[#ffffffB3] artboard artboard-horizontal phone-6">1024×320</div>
+                <div class="border-[20px] mt-24 rounded-2xl border-[#010313CC] bg-[#ffffffB3] artboard artboard-horizontal phone-6">
+                    <div class="flex justify-center ">
+                        <p class="bg-[#2f2941] px-6 pb-4 rounded-b text-white">Don't watch keyboard  while playing...</p>
+                    </div>
+
+                </div>
                 <!-- keyboard start-->
                 <div class="mt-14">
                     <div class="flex justify-center gap-1 my-1 w-full">
@@ -70,14 +75,17 @@
                       </div>
                 </div>
                 <!-- keyboard end-->
-                <div class="flex justify-between">
-                    <button class="btn bg-[rgb(137, 65, 137)]">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+                <div class="flex justify-between ">
+                    <button class="btn bg-purple-500 rounded-full text-white">
+                        
                         Life
-                      </button>
-                      <button class="btn">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+                        <span>1</span>
+                      </button>
+                      <button class="btn rounded-full bg-purple-700 text-white">
                         Score
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        <span>1</span>
                       </button>
                 </div>
                 <!-- live screen -->

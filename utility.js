@@ -15,8 +15,8 @@ function setBackgroundColor (elementById) {
 function getRandomAlphabet() {
     const alphabetString = 'abcdefghijklmnopqrstuvwxyz';
     const alphabets = alphabetString.split('');
-   const randomNumber = Math.random() * alphabets.length
-   const index = Math.round(randomNumber)
-   const alphabet = alphabets[index]
-   return alphabet
+    const randomNumber = Math.random() * alphabets.length
+    const index = Math.round(randomNumber)
+    const alphabet = alphabets[index]
+    return alphabet
 }

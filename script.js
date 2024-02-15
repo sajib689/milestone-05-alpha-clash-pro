@@ -15,6 +15,10 @@ function handleKeyBoardEvent(e) {
         let currentLife = parseFloat(currentLifeElement.innerText)
         currentLife = currentLife - 1
         currentLifeElement.innerText = currentLife
+        if(currentLife === 0) {
+            hideElementById('playground')
+            showElementById('final-score')
+        }
     }
 }
 document.addEventListener('keyup', handleKeyBoardEvent)
@@ -43,3 +47,9 @@ document.getElementById('total-score').addEventListener('click', function(){
     finalTotalScore.innerText = result
 
 })
+// play again
+
+function playAgain () {
+    hideElementById('final-score')
+    showElementById('playground')
+}

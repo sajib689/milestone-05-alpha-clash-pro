@@ -35,6 +35,8 @@ function play() {
     hideElementById('home-screen')
     showElementById('playground')
     continueGame()
+    const currentLifeElement = document.getElementById('current-life')
+        currentLifeElement.innerText = ''
 }
 
 document.getElementById('total-score').addEventListener('click', function(){
